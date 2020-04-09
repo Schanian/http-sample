@@ -1,0 +1,19 @@
+.h1{
+    color: yellow;
+    background: darkcyan;
+}
+
+input {
+    color: green($color: #000000);
+}
+
+.label {
+    color: cyan;
+}
+
+.button :hower {
+    color: darkgreen;
+}
+.button :default{
+    color: blueviolet;
+}
