@@ -7,11 +7,12 @@ import { ENETDOWN } from 'constants';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  nameChanged (event){
+  title : string ;
+  nameChanged (data: string){
     //this.title = event.
-    console.log('AppComponent ',event);
+    console.log('AppComponent ',data);
+    this.title = data;
   }
-  title = 'http-sample';
 //  constructor(private http: HttpClient){ }
   
 }

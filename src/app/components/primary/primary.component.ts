@@ -13,13 +13,9 @@ export class PrimaryComponent implements OnInit {
 
   ngOnInit(): void {
   }
-enameChanged(event: Event){
-  console.log('Event ',event);
-  // this.ename = event.target.value;
-}
-  submitted(event: any){
-    this.onNameChange.emit(this.ename);
-    console.log('submitted event ', event);
+  onNameChanged (event: any){
+    console.log('Event ',);
+    this.onNameChange.emit(event.target.value);
   }
 
 }

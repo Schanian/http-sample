@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PrimaryComponent } from './components/primary/primary.component';
+import { SendtoServiceComponent } from './sendto-service/sendto-service.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MyRestServiceCaller } from './services/httpRestApi';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimaryComponent
+    PrimaryComponent,
+    SendtoServiceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MyRestServiceCaller],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
